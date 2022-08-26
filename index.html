@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <title>Webcam</title>
+</head>
+<body>
+  <section class="header">
+    <div class="header-menu">
+      <div class="logo"><img src="img/logotip.png" width="80" height="60" alt="#"></div>
+      <div class="menu">
+        <a href="#about" class="menu-item">О нас</a>
+        <a href="#benefits" class="menu-item">Преимущества</a>
+        <a href="#map" class="menu-item">Карта</a>
+        <a href="#flat-slider" class="menu-item">Наши Квартиры</a>
+        <a href="#form" class="menu-item">Анкета</a>
+        <a href="#calculator" class="menu-item">Калькулятор</a>
+        <a href="#faq" class="menu-item">FAQ</a>
+        <a href="#contacts" class="menu-item">Контакты</a>
+      </div>
+    </div>
+
+    <h1 id="slogan">Работа с высоким доходом и оплачиваемым личным жильем в лучших районах города</div>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <h2 class="title">О нас</h2>
+      <p class="description">Задача Flatsstudio - помочь каждому партнеру сделать карьеру в вебкам-инсдустрии и обеспечить личностный рост, используя накполенные навыки и все необходимые инструменты в работе.
+        <br>Интегрированная европейская модель менеджмента не только позволит чувствовать себя комфортно на всех этапах сотрудничества, но и гарантированно приведет к заработку <br>от 100 000 р. уже на второй месяц.
+      </p>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <h2 class="title">Преимущества</h2>
+    <div class="benefits-container">
+      <div class="benefits-card">
+        <img class="benefits-icon" src="icons/home.png" alt="">
+        <h4 class="benefits-item">Отдельное проживание</h4>
+      </div>
+      <div class="benefits-card">
+        <img class="benefits-icon" src="icons/study.png" alt="">
+        <h4 class="benefits-item">Бесплатное обучение</h4>
+      </div>
+      <div class="benefits-card">
+        <img class="benefits-icon" src="icons/privacy.png" alt="">
+        <h4 class="benefits-item">Строгая конфиденциальность</h4>
+      </div>
+      <div class="benefits-card">
+        <img class="benefits-icon" src="icons/support.png" alt="">
+        <h4 class="benefits-item">Поддержка 24/7 </h4>
+      </div>
+      <div class="benefits-card">
+        <img class="benefits-icon" src="icons/comfortable.png" alt="">
+        <h4 class="benefits-item">Комфортная атмосфера</h4>
+      </div>
+      <div class="benefits-card">
+        <img class="benefits-icon" src="icons/ceo.png" alt="">
+        <h4 class="benefits-item">Без злого и строгого начальства</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <h2 class="title">Выбери, где хочешь жить</h2>
+    <div class="map-block">
+      <div class="map-container">
+        <h3>Санкт-Петербург</h3>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A537122ca90fad8c904a8ecb9fcf6a9b0c84b0980f2a156dc920b6edbe6dfbfc3&amp;source=constructor" width="596" height="448" frameborder="0"></iframe>
+      </div>
+      <div class="map-container">
+        <h3>Тамбов</h3>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a9665c5f801018f3bf0e6aff5de53338fe6d534a5f1ab1ab8a7b456579ae11a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="flat-slider">
+    <h2 class="title">Наши квартиры</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/flat-one.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/flat-two.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/flat-three.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/flat-five.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/flat-six.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/flat-seven.jpg" alt="">
+        </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="form">
+    <h2 class="title">Анкета</h2>
+    <p class="form-title">Оставьте заявку и мы вам перезвоним!</p>
+    <form action="" method="POST">
+      <div class="form">
+        <input class="input__person" type="text" name='username' placeholder="Ваше имя" required>
+        <input class="input__phone" type="text" name='phone' placeholder="Телефон" maxlength="11" required>
+      </div>
+      <div class="form-button">
+        <button class="button-send" href="#">Оставить заявку</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="calculator">
+    <h2 class="title">Честный калькулятор дохода</h2>
+    <div class="calculator-description">Всего два правила. Честность и самодисциплина – два аспекта, которые помогут с первых дней начать зарабатывать.</div>
+    <!--  -->
+  </section>
+
+  <section id="FAQ">
+    <h2 class="title">Часто задаваемые вопросы</h2>
+
+      <button class="accordion">Какое жилье мы предлагаем?</button>
+      <div class="panel">
+        <p>Совместно с каждым партнером мы подбираем комфортабельное жилье и обустраиваем рабочее место, учитывая все пожелания. Расходы по аренде и коммунальным услугам студия берет на себя на весь срок сотрудничества.
+          P.S. Если устраивает текущее место проживания - мы возьмем все расходы на себя по содержанию и созданию рабочего места.
+        </p>
+      </div>
+
+      <button class="accordion">Что подразумевается под бесплатным обучением?</button>
+      <div class="panel">
+        <p>Обучение- это не средство достижения цели, а сама цель. Помимо основных навыков для старта работы, по желанию предлагается выбрать какое-либо хобби, будь то второй иностранный язык, спортивный зал, танцы ...  А расходы мы возьмем на себя </p>
+      </div>
+
+      <button class="accordion">Как обеспечивается конфиденциальность данных?</button>
+      <div class="panel">
+        <p>Помимо личной локации у каждого партнёра, студия обеспечит защиту персональных данных и даст рекомендации по ведению социальных сетей.</p>
+      </div>
+
+      <button class="accordion">Для чего нужна служба поддержки?</button>
+      <div class="panel">
+        <p>Нет строгих временных рамок, всегда есть возможность выбрать комфортное время работы, а техническая поддержка всегда ответит на все вопросы в любое время суток. </p>
+      </div>
+
+      <button class="accordion">Как подбирается жилье?</button>
+      <div class="panel">
+        <p>Отталкиваясь от предпочтений студия поможет создать уютный уголок с современной техникой, где будет комфортно проводить время за работой.</p>
+      </div>
+
+      <button class="accordion">Немного о начальстве</button>
+      <div class="panel">
+        <p>Мы не ищем рабочую силу, мы ищем партнеров-единомышленников, готовых развиваться вместе с нами. </p>
+      </div>
+  </section>
+
+  <section id="contacts">
+    <h2 class="title">Контакты</h2>
+    <div class="contacts-container">
+      <div class="contacts-item"><a href="89312040821"><img src="icons/phone.png" width="30" height="30" alt=""></div></a>
+      <div class="contacts-item"><a href="flatswebstudio@gmail.com"><img src="icons/email.png" width="30" height="30" alt=""></div></a>
+      <div class="contacts-item"><a href="https://vk.com/flatsstudio"><img src="icons/vk.png" width="30" height="30" alt=""></div></a>
+      <div class="contacts-item"><a href="@flatsstudio"><img src="icons/telegram.png" width="30" height="30" alt=""></div></a>
+    </div>
+  </section>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+              panel.style.display = "none";
+          } else {
+              panel.style.display = "block";
+          }
+      });
+    }
+  </script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      slidesPerView: '1',
+      spaceBetween: 24,
+      grabCursor: true
+    });
+  </script>
+</body>
+</html>
