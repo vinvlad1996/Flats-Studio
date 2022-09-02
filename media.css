@@ -1,0 +1,66 @@
+@media (max-width: 1360px) {
+  .benefits-container {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
+
+@media (max-width: 1250px) {
+  .map-block {
+    grid-template-columns: repeat(2, 420px);
+    grid-template-rows: repeat(2, 500px);
+    margin-left: -100px;
+  }
+
+  .iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1040px) {
+  #form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .input__person {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  #map {
+    margin-bottom: 100px;
+  }
+  .map-block {
+    grid-template-columns: repeat(1, 420px);
+    grid-template-rows: repeat(2, 400px);
+  }
+
+  .iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 680px) {
+  .benefits-container {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .map-block {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(2, 400px);
+  }
+}
+
+@media (max-width: 476px) {
+  .benefits-container {
+    column-gap: 0;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(3, 200px);
+  }
+}
