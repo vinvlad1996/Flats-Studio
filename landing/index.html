@@ -9,34 +9,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="normalize.css">
+
+  <link rel="shortcut icon" href="/icons/favicon.png" type="icons/png">
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.css"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <title>Webcam</title>
+  <title>Flats Studio</title>
 </head>
 <body>
   <section class="header">
     <div class="header-menu">
-      <div class="logo"><img src="img/logotip.png" width="80" height="60" alt="#"></div>
-      <div class="menu">
-        <a href="#about" class="menu-item">О нас</a>
-        <a href="#benefits" class="menu-item">Преимущества</a>
-        <a href="#map" class="menu-item">Карта</a>
-        <a href="#flat-slider" class="menu-item">Наши Квартиры</a>
-        <a href="#form" class="menu-item">Анкета</a>
-        <a href="#calculator" class="menu-item">Калькулятор</a>
-        <a href="#faq" class="menu-item">FAQ</a>
-        <a href="#contacts" class="menu-item">Контакты</a>
+      <div class="logo"><img src="img/logotip.png" width="110" height="80" alt="#"></div>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a href="#about" class="menu-item">О нас</a></li>
+          <li><a href="#benefits" class="menu-item">Преимущества</a></li>
+          <li><a href="#map" class="menu-item">Карта</a></li>
+          <li><a href="#flat-slider" class="menu-item">Наши Квартиры</a></li>
+          <li><a href="#form" class="menu-item">Анкета</a></li>
+          <li><a href="#calculator" class="menu-item">Калькулятор</a></li>
+          <li><a href="#faq" class="menu-item">FAQ</a></li>
+          <li><a href="#contacts" class="menu-item">Контакты</a></li>
+        </ul>
       </div>
     </div>
 
-    <h1 id="slogan">Работа с высоким доходом и оплачиваемым личным жильем в лучших районах города</div>
+    <h1 id="slogan">
+      <div class="wrapper">
+      <div class="wrapper-slogan">
+      <span class="slogan-part-one">Работа с высоким доходом</span><br>
+      <span class="slogan-part-two">и оплачиваемым личным жильем</span><br>
+      <span class="slogan-part-three">в лучших районах города</span></div>
+    </div>
+      </div>
   </section>
 
   <section id="about">
     <div class="about-container">
+      </div>
       <h2 class="title">О нас</h2>
       <p class="description">Задача Flatsstudio - помочь каждому партнеру сделать карьеру в вебкам-инсдустрии и обеспечить личностный рост, используя накполенные навыки и все необходимые инструменты в работе.
         <br>Интегрированная европейская модель менеджмента не только позволит чувствовать себя комфортно на всех этапах сотрудничества, но и гарантированно приведет к заработку <br>от 100 000 р. уже на второй месяц.
@@ -78,12 +97,12 @@
     <h2 class="title">Выбери, где хочешь жить</h2>
     <div class="map-block">
       <div class="map-container">
-        <h3>Санкт-Петербург</h3>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A537122ca90fad8c904a8ecb9fcf6a9b0c84b0980f2a156dc920b6edbe6dfbfc3&amp;source=constructor" width="596" height="448" frameborder="0"></iframe>
+        <h3 class="map-city">Санкт-Петербург</h3>
+        <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A537122ca90fad8c904a8ecb9fcf6a9b0c84b0980f2a156dc920b6edbe6dfbfc3&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
       </div>
       <div class="map-container">
-        <h3>Тамбов</h3>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a9665c5f801018f3bf0e6aff5de53338fe6d534a5f1ab1ab8a7b456579ae11a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+        <h3 class="map-city">Тамбов</h3>
+        <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a9665c5f801018f3bf0e6aff5de53338fe6d534a5f1ab1ab8a7b456579ae11a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
       </div>
     </div>
   </section>
@@ -117,15 +136,15 @@
   </section>
 
   <section id="form">
-    <h2 class="title">Анкета</h2>
+    <h2 class="title">Присоединяйся!</h2>
     <p class="form-title">Оставьте заявку и мы вам перезвоним!</p>
     <form action="" method="POST">
       <div class="form">
         <input class="input__person" type="text" name='username' placeholder="Ваше имя" required>
         <input class="input__phone" type="text" name='phone' placeholder="Телефон" maxlength="11" required>
       </div>
-      <div class="form-button">
-        <button class="button-send" href="#">Оставить заявку</button>
+      <div class="wrap">
+        <button class="button" href="#">Оставить заявку</button>
       </div>
     </form>
   </section>
@@ -182,6 +201,19 @@
     </div>
   </section>
 
+  <a href="#win1" class="button-fixed"><img src="icons/callus.png" width="40" height="40" alt=""></a>
+    <a href="#x" class="overlay" id="win1"></a>
+    <div class="popup">
+      <div class="popup-content">
+        <p>Оставьте свой телефон и мы вам перезвоним!</p>
+        <div class="popup-content-form">
+          <input class="new-form " type="text" name='phone' placeholder="Телефон" maxlength="11" required><br>
+          <a class="button-send">Отправить</a>
+        </div>
+      </div>
+     <a class="close"title="Закрыть" href="#close"></a>
+    </div>
+
   <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -197,15 +229,6 @@
           }
       });
     }
-  </script>
-
-  <script>
-    const swiper = new Swiper('.swiper', {
-      direction: 'horizontal',
-      slidesPerView: '1',
-      spaceBetween: 24,
-      grabCursor: true
-    });
   </script>
 </body>
 </html>

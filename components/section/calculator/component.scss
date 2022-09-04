@@ -1,0 +1,15 @@
+.section-calculator {
+  height: 100vh;
+
+  &__title {
+    //
+  }
+
+  &__description {
+    padding: 0 70px;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+}

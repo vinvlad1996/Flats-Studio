@@ -1,0 +1,43 @@
+.section-header {
+  height: 100vh;
+  padding-top: 20px;
+  background-image: url("~/landing/img/bg-one.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin: 40px 0;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 50px;
+    color: #000;
+    letter-spacing: 3px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__block {
+    width: 56ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    animation:
+      flashing-border 0.75s step-end infinite,
+      printed-text 5s steps(56);
+  }
+
+  &__text {
+    &__large {
+      font-size: 54px;
+    }
+
+    &__small {
+      font-size: 38px;
+    }
+  }
+}

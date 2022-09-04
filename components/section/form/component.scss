@@ -1,0 +1,52 @@
+.section-form {
+  height: 100vh;
+  text-align: center;
+
+  &__title {
+    //
+  }
+
+  &__text {
+    padding: 50px 0;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: center;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 433px;
+    border:none;
+    border-bottom:1px solid #5F5D65;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #5F5D65;
+    border-radius: 0%;
+    outline: none;
+
+    &--person {
+      background: url('~/landing/icons/person.svg') 0 12px no-repeat;
+      padding: 12px 31px;
+    }
+
+    &__phone {
+      background: url('~/landing/icons/phone2.svg') 0 15px no-repeat;
+      padding: 12px 31px;
+      outline: none;
+    }
+  }
+
+  &__button {
+    //
+  }
+}

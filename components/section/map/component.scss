@@ -1,0 +1,32 @@
+.section-map {
+  height: 100vh;
+  background-image: url('~/landing/img/map-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    //
+  }
+
+  &__wrapper {
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__block {
+    padding: 0 70px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__iframe {
+    width: 500px;
+    height: 400px;
+  }
+}
