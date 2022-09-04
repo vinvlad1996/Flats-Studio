@@ -1,0 +1,100 @@
+@mixin button-common {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+$root-name: 'ui-sidebar';
+
+.#{$root-name} {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    background: none;
+    border: none;
+
+    span {
+      @include button-common;
+
+      &::before {
+        @include button-common;
+
+        content: "";
+        top: -8px;
+      }
+
+      &::after {
+        @include button-common;
+
+        content: "";
+        top: 8px;
+      }
+    }
+
+    &--active {
+      span {
+        transform: rotate(45deg);
+
+        &::before {
+          top: 0;
+          transform: rotate(0);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+
+  &__list {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 20px;
+    list-style: none;
+    background-color: #ECEFF1;
+    opacity: 0.7;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    z-index: 100;
+
+    &--active {
+      visibility: visible;
+      right: 0;
+    }
+  }
+}

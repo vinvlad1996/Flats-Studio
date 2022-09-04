@@ -1,5 +1,8 @@
 <template>
-  <section :class="b()">
+  <section
+    id="faq"
+    :class="b()"
+  >
     <h2 :class="b('title')">
       Часто задаваемые вопросы
     </h2>

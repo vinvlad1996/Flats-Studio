@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2 :class="b('title')">
+  <section id="benefits">
+    <h2>
       Преимущества
     </h2>
 
@@ -32,27 +32,27 @@
         items: [
           {
             title: 'Отдельное проживание',
-            src: require('@/landing/icons/home.png')
+            src: require('@/assets/icons/home.png')
           },
           {
             title: 'Бесплатное обучение',
-            src: require('@/landing/icons/study.png')
+            src: require('@/assets/icons/study.png')
           },
           {
             title: 'Строгая конфиденциальность',
-            src: require('@/landing/icons/privacy.png')
+            src: require('@/assets/icons/privacy.png')
           },
           {
             title: 'Поддержка 24/7',
-            src: require('@/landing/icons/support.png')
+            src: require('@/assets/icons/support.png')
           },
           {
             title: 'Комфортная атмосфера',
-            src: require('@/landing/icons/comfortable.png')
+            src: require('@/assets/icons/comfortable.png')
           },
           {
             title: 'Без злого и строгого начальства',
-            src: require('@/landing/icons/ceo.png')
+            src: require('@/assets/icons/ceo.png')
           }
         ]
       };

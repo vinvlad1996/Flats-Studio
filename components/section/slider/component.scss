@@ -2,17 +2,13 @@
   height: 100vh;
   text-align: center;
 
-  &__title {
-    //
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
   }
 
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  &__item {
-    //
+  .swiper-wrapper {
+    align-items: center;
   }
 }

@@ -22,22 +22,42 @@
   }
 
   &__block {
-    width: 56ch;
-    white-space: nowrap;
+    width: 35ch;
     overflow: hidden;
     border-right: 4px solid orange;
+    white-space: nowrap;
     animation:
       flashing-border 0.75s step-end infinite,
       printed-text 5s steps(56);
   }
 
   &__text {
-    &__large {
+    &--large {
       font-size: 54px;
     }
 
-    &__small {
+    &--small {
       font-size: 38px;
+    }
+  }
+
+  @keyframes flashing-border {
+    0% {
+      border-color: orange;
+    }
+
+    50% {
+      border-color: transparent;
+    }
+
+    100% {
+      border-color: orange;
+    }
+  }
+
+  @keyframes printed-text {
+    from {
+      width: 0;
     }
   }
 }

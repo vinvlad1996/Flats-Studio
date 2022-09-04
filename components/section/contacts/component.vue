@@ -1,5 +1,8 @@
 <template>
-  <section :class="b()">
+  <section
+    id="contacts"
+    :class="b()"
+  >
     <h2 :class="b('title')">
       Контакты
     </h2>
@@ -31,19 +34,19 @@
         contacts: [
           {
             href: '89312040821',
-            src: require('@/landing/icons/phone.png')
+            src: require('@/assets/icons/phone.png')
           },
           {
             href: 'flatswebstudio@gmail.com',
-            src: require('@/landing/icons/email.png')
+            src: require('@/assets/icons/email.png')
           },
           {
             href: 'https://vk.com/flatsstudio',
-            src: require('@/landing/icons/vk.png')
+            src: require('@/assets/icons/vk.png')
           },
           {
             href: '@flatsstudio',
-            src: require('@/landing/icons/telegram.png')
+            src: require('@/assets/icons/telegram.png')
           }
         ]
       };

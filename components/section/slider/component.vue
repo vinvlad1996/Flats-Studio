@@ -1,48 +1,75 @@
 <template>
-  <section :class="b()">
-    <h2 :class="b('title')">
+  <section
+    id="flat-slider"
+    :class="b()"
+  >
+    <h2>
       Наши квартиры
     </h2>
 
-    <ul :class="b('list')">
-      <li
-        v-for="(item, index) in items"
-        :key="index"
-        :class="b('item')"
+    <swiper
+      :options="options"
+    >
+      <swiper-slide
+        v-for="(item, key) in items"
+        :key="key"
       >
         <img
+          :class="b('image')"
           :src="item.src"
           alt=""
         >
-      </li>
-    </ul>
+      </swiper-slide>
+    </swiper>
   </section>
 </template>
 
 <script>
+  import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+  import 'swiper/css/swiper.css';
+
   export default {
     name: 'section-slider',
+    components: {
+      Swiper,
+      SwiperSlide
+    },
     data() {
       return {
+        options: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          breakpoints: {
+            320: {
+              slidesPerView: 1
+            },
+            480: {
+              slidesPerView: 2
+            },
+            640: {
+              slidesPerView: 3
+            }
+          }
+        },
         items: [
           {
-            src: require('@/landing/img/flat-one.jpg')
+            src: require('@/assets/img/flat-one.jpg')
+          },
+          {
+            src: require('@/assets/img/flat-two.jpg')
+          },
+          {
+            src: require('@/assets/img/flat-three.jpg')
+          },
+          {
+            src: require('@/assets/img/flat-five.jpg')
+          },
+          {
+            src: require('@/assets/img/flat-six.jpg')
+          },
+          {
+            src: require('@/assets/img/flat-seven.jpg')
           }
-          // {
-          //   src: require('@/landing/img/flat-two.jpg')
-          // },
-          // {
-          //   src: require('@/landing/img/flat-three.jpg')
-          // },
-          // {
-          //   src: require('@/landing/img/flat-five.jpg')
-          // },
-          // {
-          //   src: require('@/landing/img/flat-six.jpg')
-          // },
-          // {
-          //   src: require('@/landing/img/flat-seven.jpg')
-          // }
         ]
       };
     }

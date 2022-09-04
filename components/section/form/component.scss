@@ -2,8 +2,9 @@
   height: 100vh;
   text-align: center;
 
-  &__title {
-    //
+  @media (max-width: 1040px) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &__text {
@@ -22,31 +23,112 @@
   &__input {
     width: 100%;
     max-width: 433px;
-    border:none;
-    border-bottom:1px solid #5F5D65;
-    font-family: 'Roboto';
+    border: none;
+    border-bottom: 1px solid #5f5d65;
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 1px;
-    color: #5F5D65;
+    color: #5f5d65;
     border-radius: 0%;
     outline: none;
 
     &--person {
-      background: url('~/landing/icons/person.svg') 0 12px no-repeat;
+      background: url("~/landing/icons/person.svg") 0 12px no-repeat;
       padding: 12px 31px;
     }
 
-    &__phone {
-      background: url('~/landing/icons/phone2.svg') 0 15px no-repeat;
+    &--phone {
+      background: url("~/landing/icons/phone2.svg") 0 15px no-repeat;
       padding: 12px 31px;
       outline: none;
     }
   }
 
   &__button {
-    //
+    margin-top: 100px;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #907dfc;
+    background: linear-gradient(90deg, #907dfc 0%, #907dfc 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(79 209 197 / 64%);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+
+    &::before {
+      content: "";
+      border-radius: 1000px;
+      min-width: calc(300px + 12px);
+      min-height: calc(60px + 12px);
+      border: 6px solid #907dfc;
+      box-shadow: 0 0 60px #907dfc;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover,
+    &:focus {
+      color: #313133;
+      transform: translateY(-6px);
+
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        animation: none;
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      border: 6px solid #5c45dd;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ring 1.5s infinite;
+    }
+
+    &--disabled {
+      cursor: initial;
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
   }
 }

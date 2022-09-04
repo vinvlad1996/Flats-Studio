@@ -37,7 +37,8 @@ export default {
    },
 
   plugins: [
-    '~plugins/vue-bem-cn'
+    '~plugins/vue-bem-cn',
+    { src: '~plugins/vue-awesome-swiper', mode: 'client' }
   ],
 
   components: true,
@@ -48,6 +49,7 @@ export default {
   ],
 
   modules: [
+    '@nuxtjs/axios',
     '@nuxtjs/style-resources'
   ],
 

@@ -2,8 +2,8 @@
   height: 100vh;
   padding: 0 70px;
 
-  &__title {
-    //
+  @media (max-width: 860px) {
+    padding: 0 40px;
   }
 
   &__description {

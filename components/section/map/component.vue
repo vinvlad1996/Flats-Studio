@@ -1,6 +1,9 @@
 <template>
-  <section :class="b()">
-    <h2 :class="b('title')">
+  <section
+    id="map"
+    :class="b()"
+  >
+    <h2>
       Выбери, где хочешь жить
     </h2>
 

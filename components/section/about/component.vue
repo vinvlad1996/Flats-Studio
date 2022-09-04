@@ -1,6 +1,9 @@
 <template>
-  <section :class="b()">
-    <h2 :class="b('title')">
+  <section
+    id="about"
+    :class="b()"
+  >
+    <h2>
       О нас
     </h2>
 

@@ -1,11 +1,7 @@
 .section-benefits {
   height: 100vh;
-  background-image: url('~/landing/img/geo.png');
+  background-image: url("~/landing/img/geo.png");
   background-repeat: no-repeat;
-
-  &__title {
-    //
-  }
 
   &__list {
     padding: 0;
@@ -18,6 +14,22 @@
     justify-content: center;
     column-gap: 20px;
     margin-bottom: 250px;
+
+    @media (max-width: 1360px) {
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(2, 200px);
+    }
+
+    @media (max-width: 680px) {
+      grid-template-columns: repeat(2, 200px);
+      grid-template-rows: repeat(3, 200px);
+    }
+
+    @media (max-width: 476px) {
+      column-gap: 0;
+      grid-template-columns: repeat(2, 160px);
+      grid-template-rows: repeat(3, 200px);
+    }
   }
 
   &__item {

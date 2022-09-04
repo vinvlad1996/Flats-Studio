@@ -1,5 +1,7 @@
 <template>
   <section :class="b()">
+    <ui-sidebar />
+
     <h1 :class="b('title')">
       <div :class="b('wrapper')">
         <div :class="b('block')">
@@ -25,8 +27,13 @@
 </template>
 
 <script>
+  import UiSidebar from '~/components/ui/sidebar/component.vue';
+
   export default {
-    name: 'section-header'
+    name: 'section-header',
+    components: {
+      UiSidebar
+    }
   };
 </script>
 

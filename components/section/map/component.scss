@@ -1,11 +1,11 @@
 .section-map {
   height: 100vh;
-  background-image: url('~/landing/img/map-bg.png');
+  background-image: url("~/landing/img/map-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__title {
-    //
+  @media (max-width: 860px) {
+    margin-bottom: 100px;
   }
 
   &__wrapper {
@@ -15,6 +15,22 @@
     grid-template-rows: 600px;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1250px) {
+      grid-template-columns: repeat(2, 420px);
+      grid-template-rows: repeat(2, 500px);
+      margin-left: -100px;
+    }
+
+    @media (max-width: 860px) {
+      grid-template-columns: 420px;
+      grid-template-rows: repeat(2, 400px);
+    }
+
+    @media (max-width: 680px) {
+      grid-template-columns: 400px;
+      grid-template-rows: repeat(2, 400px);
+    }
   }
 
   &__block {
@@ -28,5 +44,15 @@
   &__iframe {
     width: 500px;
     height: 400px;
+
+    @media (max-width: 1250px) {
+      width: 400px;
+      height: 300px;
+    }
+
+    @media (max-width: 860px) {
+      width: 400px;
+      height: 300px;
+    }
   }
 }

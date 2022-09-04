@@ -1,5 +1,8 @@
 <template>
-  <section :class="b()">
+  <section
+    id="calculator"
+    :class="b()"
+  >
     <h2 :class="b('title')">
       Честный калькулятор дохода
     </h2>
