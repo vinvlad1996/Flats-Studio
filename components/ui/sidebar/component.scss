@@ -28,6 +28,7 @@ $root-name: 'ui-sidebar';
     z-index: 1;
     background: none;
     border: none;
+    z-index: 101;
 
     span {
       @include button-common;

@@ -66,7 +66,7 @@
 
         try {
           await axios
-            .post(`${process.env.SERVER_URL}/api/send`, this.form)
+            .post('https://flats-studio-backend.herokuapp.com/api/send', this.form)
             .then(() => {
               alert('Заявка успешно оставлена!'); // eslint-disable-line no-alert
             })
