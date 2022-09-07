@@ -1,6 +1,10 @@
 .section-form {
   height: 100vh;
   text-align: center;
+  background-image: url("~/landing/img/bg-three.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: 1040px) {
     margin-left: 20px;
@@ -9,8 +13,12 @@
 
   &__text {
     padding: 50px 0;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 22px;
+
+    @media (max-width: 500px) {
+      margin-top: -100px;
+    }
   }
 
   &__wrapper {
@@ -18,6 +26,10 @@
     align-items: center;
     column-gap: 50px;
     justify-content: center;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 
   &__input {
@@ -34,6 +46,10 @@
     color: #5f5d65;
     border-radius: 0%;
     outline: none;
+
+    @media (max-width: 500px) {
+      width: 80%;
+    }
 
     &--person {
       background: url("~/landing/icons/person.svg") 0 12px no-repeat;

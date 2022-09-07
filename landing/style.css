@@ -15,7 +15,8 @@ a:hover {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Slabo 27px', serif;
   max-width: 1920px;
 }
 
@@ -256,9 +257,9 @@ li:not(:last-child) {
 
 #benefits {
   height: 100vh;
-  background-image: url(img/geo.png);
+  background-image: url("~/landing/img/map-bg.png");
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
 }
 
 .benefits-container {

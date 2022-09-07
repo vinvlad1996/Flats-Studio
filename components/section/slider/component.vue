@@ -39,6 +39,7 @@
         options: {
           slidesPerView: 3,
           spaceBetween: 20,
+          loop: true,
           breakpoints: {
             320: {
               slidesPerView: 1

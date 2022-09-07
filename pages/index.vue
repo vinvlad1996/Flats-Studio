@@ -10,6 +10,7 @@
     <section-faq />
     <section-contacts />
     <ui-modal />
+    <ui-dialog />
 
     <a
       href="#ui-modal"
@@ -36,6 +37,7 @@
   import SectionFaq from '~/components/section/faq/component.vue';
   import SectionContacts from '~/components/section/contacts/component.vue';
   import UiModal from '~/components/ui/modal/component.vue';
+  import uiDialog from '~/components/ui/dialog/component.vue';
 
   export default {
     name: 'index-page',
@@ -49,7 +51,8 @@
       SectionCalculator,
       SectionFaq,
       SectionContacts,
-      UiModal
+      UiModal,
+      uiDialog
     }
   };
 </script>
@@ -72,7 +75,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Quicksand, sans-serif;
+  font-family: "Slabo 27px", sans-serif;
   max-width: 1920px;
 }
 
@@ -91,6 +94,7 @@ ul {
 }
 
 h2 {
+  font-family: "Slabo 27px", sans-serif;
   margin-left: auto;
   margin-bottom: 150px;
   margin-top: 0;
@@ -105,6 +109,14 @@ h2 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 
+  @media (max-width: 680px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 24px;
+  }
+
   &::after {
     content: "";
     width: 150px;
@@ -114,6 +126,10 @@ h2 {
     background: black;
     display: block;
     margin: 0 auto;
+
+    @media (max-width: 680px) {
+      top: 30px;
+    }
   }
 }
 

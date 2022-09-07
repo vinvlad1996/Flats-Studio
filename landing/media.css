@@ -19,6 +19,15 @@
 }
 
 @media (max-width: 1040px) {
+  .section-header__block {
+    width: 36ch;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    white-space: nowrap;
+    -webkit-animation: flashing-border 0.75s step-end infinite, printed-text 5s steps(56);
+    animation: flashing-border 0.75s step-end infinite, printed-text 5s steps(56);
+  }
+
   #form {
     margin-left: 20px;
     margin-right: 20px;

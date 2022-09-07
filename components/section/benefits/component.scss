@@ -1,7 +1,9 @@
 .section-benefits {
   height: 100vh;
-  background-image: url("~/landing/img/geo.png");
+  background-image: url("~/landing/img/bg-four.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__list {
     padding: 0;

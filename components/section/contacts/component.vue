@@ -33,11 +33,11 @@
       return {
         contacts: [
           {
-            href: '89312040821',
+            href: 'tel:89312040821',
             src: require('@/assets/icons/phone.png')
           },
           {
-            href: 'flatswebstudio@gmail.com',
+            href: 'mailto:flatswebstudio@gmail.com',
             src: require('@/assets/icons/email.png')
           },
           {
@@ -45,7 +45,7 @@
             src: require('@/assets/icons/vk.png')
           },
           {
-            href: '@flatsstudio',
+            href: 'https://telegram.me/flatsstudio',
             src: require('@/assets/icons/telegram.png')
           }
         ]

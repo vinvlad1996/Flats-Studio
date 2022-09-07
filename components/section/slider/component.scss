@@ -11,4 +11,16 @@
   .swiper-wrapper {
     align-items: center;
   }
+
+  .swiper-container {
+    margin-top: -100px;
+
+    @media (max-width: 860px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 470px) {
+      margin-top: -160px;
+    }
+  }
 }

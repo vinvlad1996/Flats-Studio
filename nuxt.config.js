@@ -21,7 +21,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap' }
     ]
   },
@@ -38,6 +38,7 @@ export default {
 
   plugins: [
     '~plugins/vue-bem-cn',
+    '~plugins/vue-yandex-maps',
     { src: '~plugins/vue-awesome-swiper', mode: 'client' }
   ],
 

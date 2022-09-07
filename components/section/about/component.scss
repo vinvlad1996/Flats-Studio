@@ -1,6 +1,10 @@
 .section-about {
   height: 100vh;
   padding: 0 70px;
+  background-image: url("~/landing/img/bg-two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: 860px) {
     padding: 0 40px;
@@ -9,7 +13,27 @@
   &__description {
     text-align: center;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
+
+    @media (max-width: 720px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 560px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 485px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @media (max-width: 440px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }

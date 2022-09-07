@@ -86,7 +86,8 @@
 
       <div :class="b('inner')">
         <h5 :class="b('title')">
-          Средняя зарплата:
+          Средняя зарплата:<br>
+          <span :class="b('descr')">*в первые три месяца работы</span>
         </h5>
 
         <div :class="b('inner-block')">

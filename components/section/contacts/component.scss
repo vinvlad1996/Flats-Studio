@@ -1,10 +1,10 @@
 .section-contacts {
   height: 100vh;
   padding-top: 100px;
-
-  &__title {
-    //
-  }
+  background-image: url("~/landing/img/bg-seven.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__list {
     display: flex;

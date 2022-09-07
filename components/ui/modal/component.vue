@@ -9,7 +9,7 @@
     <div :class="b('wrapper')">
       <div :class="b('content')">
         <p>
-          Оставьте свой телефон и мы вам перезвоним!
+          Оставьте номер телефона и мы вам перезвоним!
         </p>
 
         <div :class="b('form')">
@@ -19,8 +19,6 @@
             placeholder="Телефон"
             maxlength="11"
           >
-
-          <br>
 
           <button
             :class="b('button-send')"
@@ -51,7 +49,8 @@
         isLoading: false,
         form: {
           username: '',
-          phone: ''
+          phone: '',
+          age: ''
         }
       };
     },
@@ -79,7 +78,8 @@
           this.isLoading = false;
           this.form = {
             username: '',
-            phone: ''
+            phone: '',
+            age: ''
           };
           window.location.href = '#close';
         }
